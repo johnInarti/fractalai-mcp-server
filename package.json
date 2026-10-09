@@ -1,0 +1,59 @@
+{
+  "name": "fractalai-mcp-server",
+  "version": "0.1.1",
+  "description": "Model Context Protocol (MCP) server for FractalAI: verify post-quantum (ML-DSA-65 / Dilithium-3 / NIST FIPS 204) signatures and pay for PQC signing, provenance sealing and decision attestation over x402 (HTTP 402 + USDC on Base).",
+  "type": "module",
+  "bin": {
+    "fractalai-mcp-server": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "mcpName": "io.github.johnInarti/fractalai",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "post-quantum",
+    "dilithium",
+    "cryptography",
+    "x402",
+    "payments",
+    "usdc",
+    "blockchain",
+    "provenance",
+    "attestation",
+    "eu-ai-act"
+  ],
+  "author": "FractalAI Network <helloinvestor@fractalai.net.co>",
+  "license": "MIT",
+  "homepage": "https://fractalai.net.co",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnInarti/FRACTAL-AI.git",
+    "directory": "integrations/mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/johnInarti/FRACTAL-AI/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.4.0"
+  }
+}

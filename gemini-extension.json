@@ -1,0 +1,19 @@
+{
+  "name": "fractalai-mcp-server",
+  "version": "0.1.1",
+  "description": "Verify post-quantum (ML-DSA-65 / NIST FIPS 204) signatures and buy proof, provenance and AI-decision receipts over x402 micropayments.",
+  "mcpServers": {
+    "fractalai": {
+      "command": "npx",
+      "args": ["-y", "fractalai-mcp-server@0.1.1"]
+    }
+  },
+  "settings": [
+    {
+      "name": "FractalAI base URL",
+      "description": "Override the FractalAI endpoint base. Defaults to https://fractalai.net.co.",
+      "envVar": "FRACTALAI_BASE_URL",
+      "sensitive": false
+    }
+  ]
+}

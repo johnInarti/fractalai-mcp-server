@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.johnInarti/fractalai",
+  "description": "Post-quantum (ML-DSA-65/Dilithium-3) proof, provenance & AI-decision receipts, paid via x402.",
+  "title": "FractalAI Post-Quantum Proofs",
+  "version": "0.1.3",
+  "websiteUrl": "https://fractalai.net.co",
+  "repository": {
+    "url": "https://github.com/johnInarti/fractalai-mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "fractalai-mcp-server",
+      "version": "0.1.1",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        { "name": "FRACTALAI_BASE_URL", "description": "Override the FractalAI endpoint base (defaults to https://fractalai.net.co).", "format": "string", "isRequired": false }
+      ]
+    }
+  ]
+}
